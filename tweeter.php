@@ -28,7 +28,7 @@ $tweet_text = stripslashes($line);
 print "Updating Status...\n";
 $result = post_tweet($tweet_text);
 print "Response code: " . $result . "\n";
-print "Updating location...\n"
+print "Updating location...\n";
 $result2 = update_location($title);
 print "Response code: " . $result2 . "\n";
 
