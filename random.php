@@ -14,5 +14,4 @@ function randomLyric () {
 
 	return $line;
 }
-echo randomLyric ();
 ?>
