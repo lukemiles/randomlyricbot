@@ -47,7 +47,7 @@ $connection = new tmhOAuth(array(
 ));
   // Make the API call
   $connection->request('POST', 
-    $connection->url('1/statuses/update'), 
+    $connection->url('1.1/statuses/update'), 
     array('status' => $tweet_text));
   
   return $connection->response['code'];
@@ -64,7 +64,7 @@ $connection = new tmhOAuth(array(
 ));
   // Make the API call
   $connection->request('POST', 
-    $connection->url('1/account/update_profile'), 
+    $connection->url('1.1/account/update_profile'), 
     array('location' => $title));
   
   return $connection->response['code'];
